@@ -18,6 +18,12 @@ main
   table.highlight > tbody > tr:hover
     background-color: #ddd
 
+  .card.info
+    .card-title
+      font-size: 18px
+    p
+      font-size: 12px
+
 header,
 main,
 footer
@@ -32,6 +38,11 @@ header
 
   .side-nav
     height: calc(100%)
+
+    li
+      &.active.blue
+        a
+          color: #fff
 
     .search
       .search-wrapper
@@ -101,9 +112,6 @@ nav
 
 // Footer
 footer.page-footer
-  img
-    padding-bottom: 15px
-
   a
     color: #000
 
