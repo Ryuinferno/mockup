@@ -9,7 +9,7 @@ function oSearchSuggest(searchFuc) {
         });
         input.bind('keydown', function(event) {
             if (event.keyCode == 13) {
-                location.href = '/?device=' + input.val()
+                location.href = '/mockup/?device=' + input.val()
             }
         });
     }
@@ -74,7 +74,7 @@ function oSearchSuggest(searchFuc) {
             $(this).removeClass('hover');
         }).bind('click', function() {
             var devicename = this.innerHTML.split("-");
-            location.href = '/?device=' + devicename[devicename.length - 1].replace(/\s/g, "");
+            location.href = '/mockup/?device=' + devicename[devicename.length - 1].replace(/\s/g, "");
             suggestWrap.hide();
         });
     }
