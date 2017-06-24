@@ -14,10 +14,11 @@ $(document).ready(function(){
   }
   if (window.urlParams.device) {
     $("li#device_" + window.urlParams.device).addClass('active blue');
-    $("li#device_" + window.urlParams.device)
+    var $header = $("li#device_" + window.urlParams.device)
         .closest('#vendor')
         .find('.collapsible-header')
-        .addClass('active');
+    $header.addClass('active');
+    $header.find('i.material-icons').html('keyboard_arrow_up');
   } else {
     $('li#device_all').addClass('active blue');
   }
@@ -33,5 +34,12 @@ $('input#search').focus(function(){
 $('input#search').blur(function(){
   if (!$(this).val()) {
     $(this).parent().removeClass('focused');
+  }
+});
+$('.collapsible-header').bind('click', function(){
+  if ($(this).hasClass('active')) {
+    $(this).find('i.material-icons').html('keyboard_arrow_down');
+  } else {
+    $(this).find('i.material-icons').html('keyboard_arrow_up');
   }
 });
