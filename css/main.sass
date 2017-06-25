@@ -66,11 +66,15 @@ header
 
   .side-nav
     height: calc(100%)
+    height: -webkit-calc(100% + 60px)
 
     li
-      &.active.blue
-        a
-          color: #fff
+      &#vendor
+        li
+          a
+            height: 100%
+            line-height: 1.5
+            padding: 15px 32px
 
     .search
       position: absolute
@@ -106,7 +110,7 @@ header
             line-height: 1.5
             color: #039be5
             display: block
-            padding: 15px 30px
+            padding: 15px 32px
             cursor: default
 
             &.hover
