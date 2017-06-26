@@ -1,7 +1,5 @@
-$(document).ready(function(){
-  $(".button-collapse").sideNav();
-});
 (function(){
+  $(".button-collapse").sideNav();
   window.urlParams = {};
   var e, a = /\+/g,
       r = /([^&=]+)=?([^&]*)/g,
