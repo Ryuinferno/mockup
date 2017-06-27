@@ -41,3 +41,6 @@ $('.collapsible-header').bind('click', function(){
     $(this).find('i.material-icons').html('keyboard_arrow_up');
   }
 });
+if ($(window).width() > 600) {
+  $('.card.info.hardware').height($('.card.info.device').height());
+}
