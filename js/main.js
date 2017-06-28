@@ -1,5 +1,6 @@
 (function($){
   $(function(){
+    $mobile = $(window).width() < 768;
     $(".button-collapse").sideNav();
     window.urlParams = {};
     var e, a = /\+/g,
@@ -41,8 +42,17 @@
         $(this).find('i.material-icons').html('keyboard_arrow_up');
       }
     });
-    if ($(window).width() > 600) {
-      $('.card.info.hardware').height($('.card.info.device').height());
-    }
+    $(window).resize(function(){
+      if ($(window).width() > 600) {
+        $('.card.info.hardware').height($('.card.info.device').height());
+      }
+      if (!$mobile){
+        if ($(window).width() < 768) {
+          $('.card.info.ad-wrapper .card-content .ad').css({marginLeft: '0', marginRight: '0'});
+        } else {
+          $('.card.info.ad-wrapper .card-content .ad').css({marginLeft: 'auto', marginRight: 'auto'});
+        }
+      }
+    });
   });
 })(jQuery);
