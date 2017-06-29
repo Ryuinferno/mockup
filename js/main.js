@@ -14,11 +14,13 @@
     }
     if (window.urlParams.device) {
       $("li#device_" + window.urlParams.device).addClass('active blue');
-      var $header = $("li#device_" + window.urlParams.device)
-          .closest('#vendor')
-          .find('.collapsible-header')
+      var $main = $("li#device_" + window.urlParams.device).closest('#vendor');
+      $main.addClass('active');
+      var $header = $main.find('.collapsible-header');
       $header.addClass('active');
       $header.find('i.material-icons').html('keyboard_arrow_up');
+      var $content = $main.find('.collapsible-body');
+      $content.css('display', 'block');
     } else {
       $('li#device_all').addClass('active blue');
     }
@@ -42,6 +44,9 @@
         $(this).find('i.material-icons').html('keyboard_arrow_up');
       }
     });
+    if ($(window).width() > 600) {
+      $('.card.info.hardware').height($('.card.info.device').height());
+    }
     $(window).resize(function(){
       if ($(window).width() > 600) {
         $('.card.info.hardware').height($('.card.info.device').height());
