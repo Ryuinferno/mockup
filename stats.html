@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MoKee Open Source Downloads</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/mockup/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/mockup/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/mockup/img/favicon-16x16.png">
+    <link rel="manifest" href="/mockup/img/manifest.json">
+    <link rel="mask-icon" href="/mockup/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/mockup/img/favicon.ico">
+    <meta name="msapplication-config" content="/mockup/img/browserconfig.xml">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/mockup/css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav blue">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a class="page-title" href="/mockup">MoKee Open Source Downloads</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+      <ul id="slide-out" class="side-nav fixed">
+        <li>
+          <div class="userView">
+            <div class="background"><img src="/mockup/img/bg.jpg"></div>
+            <a href="http://www.mokeedev.com/" target="_blank"><img class="circle z-depth-2" src="/mockup/img/logo.png"></a>
+            <span class="white-text name">MoKee OpenSource</span>
+            <span class="white-text email">opensource@mokeedev.com</span>
+          </div>
+        </li>
+        <li class="search">
+          <div class="search-wrapper card">
+            <input id="search" placeholder="Enter device name"><i class="material-icons">search</i>
+            <!-- SEARCH RESULTS -->
+            <div class="search-results"></div>
+          </div>
+        </li>
+        <li style="padding-top:50px"><a class="subheader">LINKS</a></li>
+        <li><a class="waves-effect" href="http://www.mokeedev.com/"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="http://bbs.mfunz.com/"><i class="material-icons">forum</i>Forum</a></li>
+        <li><a class="waves-effect" href="http://changelog.mokeedev.com/"><i class="material-icons">sort</i>Changelog</a></li>
+        <li><a class="waves-effect" href="http://build.mokeedev.com/"><i class="material-icons">check_circle</i>Status of Build</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Contribute</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="waves-effect" href="http://wiki.mokeedev.com/Contributing_code" target="_blank"><i class="material-icons">info</i>Contributing Code</a></li>
+                  <li><a class="waves-effect" href="https://review.mfunz.com/" target="_blank"><i class="material-icons">code</i>Gerrit Code Review</a></li>
+                  <li><a class="waves-effect" href="http://www.mokeedev.com/en/device-maintainer" target="_blank"><i class="material-icons">build</i>Device Tree Maintenance</a></li>
+                  <li><a class="waves-effect" href="http://www.mokeedev.com/en/developer-application" target="_blank"><i class="material-icons">developer_mode</i>Unofficial Deivce Support</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Social Networks</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="waves-effect" href="http://weibo.com/martincz"><i class="material-icons">people</i>Weibo</a></li>
+                  <li><a class="waves-effect" href="https://github.com/MoKee"><i class="material-icons">people</i>GitHub</a></li>
+                  <li><a class="waves-effect" href="https://plus.google.com/+MokeedevTeam"><i class="material-icons">people</i>Google+</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">TYPE</a></li>
+        <li id="type_all"><a class="waves-effect" href="javascript:void(0)">All</a></li>
+        <li id="type_release"><a class="waves-effect" href="javascript:void(0)">Release</a></li>
+        <li id="type_nightly"><a class="waves-effect" href="javascript:void(0)">Nightly</a></li>
+        <li id="type_history"><a class="waves-effect" href="javascript:void(0)">History</a></li>
+        <li id="type_unofficial"><a class="waves-effect" href="javascript:void(0)">Unofficial</a></li>
+        <li id="type_experimental"><a class="waves-effect" href="javascript:void(0)">Experimental</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">DEVICES</a></li>
+        <li id="device_all"><a class="waves-effect" href="javascript:void(0)">All</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li id="vendor">
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>ARK</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li id="device_peach"><a class="waves-effect" href="javascript:void(0)">Benefit A3 (peach)</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible collapsible-accordion">
+            <li id="vendor">
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Asus</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li id="device_z008"><a class="waves-effect" href="javascript:void(0)">Zenfone 2 (720p) (z008)</a></li>
+                  <li id="device_z00a"><a class="waves-effect" href="javascript:void(0)">Zenfone 2 (1080p) (z00a)</a></li>
+                  <li id="device_z00d"><a class="waves-effect" href="javascript:void(0)">Zenfone 2 (z00d)</a></li>
+                  <li id="device_z00l"><a class="waves-effect" href="javascript:void(0)">Zenfone 2 Laser (720p) (z00l)</a></li>
+                  <li id="device_z00t"><a class="waves-effect" href="javascript:void(0)">Zenfone 2 Laser/Selfie (1080p) (z00t)</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible collapsible-accordion">
+            <li id="vendor">
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Coolpad</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li id="device_cp8675"><a class="waves-effect" href="javascript:void(0)">Dazen F2 (cp8675)</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible collapsible-accordion">
+            <li id="vendor">
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Firefly</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li id="device_rk3288"><a class="waves-effect" href="javascript:void(0)">RK3288 (rk3288)</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible collapsible-accordion">
+            <li id="vendor">
+              <a class="collapsible-header waves-effect"><i class="material-icons">keyboard_arrow_down</i>Google</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li id="device_angler"><a class="waves-effect" href="javascript:void(0)">Nexus 6P (angler)</a></li>
+                  <li id="device_bullhead"><a class="waves-effect" href="javascript:void(0)">Nexus 5X (bullhead)</a></li>
+                  <li id="device_deb"><a class="waves-effect" href="javascript:void(0)">Nexus 7 2013 (LTE) (deb)</a></li>
+                  <li id="device_flo"><a class="waves-effect" href="javascript:void(0)">Nexus 7 2013 (Wi-Fi) (flo)</a></li>
+                  <li id="device_flounder"><a class="waves-effect" href="javascript:void(0)">Nexus 9 (Wi-Fi) (flounder)</a></li>
+                  <li id="device_flounder_lte"><a class="waves-effect" href="javascript:void(0)">Nexus 9 (LTE) (flounder_lte)</a></li>
+                  <li id="device_grouper"><a class="waves-effect" href="javascript:void(0)">Nexus 7 (Wi-Fi) (grouper)</a></li>
+                  <li id="device_hammerhead"><a class="waves-effect" href="javascript:void(0)">Nexus 5 (hammerhead)</a></li>
+                  <li id="device_hammerheadcaf"><a class="waves-effect" href="javascript:void(0)">Nexus 5 CAF (hammerheadcaf)</a></li>
+                  <li id="device_mako"><a class="waves-effect" href="javascript:void(0)">Nexus 4 (mako)</a></li>
+                  <li id="device_marlin"><a class="waves-effect" href="javascript:void(0)">Pixel XL (marlin)</a></li>
+                  <li id="device_sailfish"><a class="waves-effect" href="javascript:void(0)">Pixel (sailfish)</a></li>
+                  <li id="device_seed"><a class="waves-effect" href="javascript:void(0)">Android One 2nd gen (seed)</a></li>
+                  <li id="device_shamrock"><a class="waves-effect" href="javascript:void(0)">Android One 3rd gen (shamrock)</a></li>
+                  <li id="device_shamu"><a class="waves-effect" href="javascript:void(0)">Nexus 6 (shamu)</a></li>
+                  <li id="device_sprout4"><a class="waves-effect" href="javascript:void(0)">Android One (4GB) (sprout4)</a></li>
+                  <li id="device_sprout8"><a class="waves-effect" href="javascript:void(0)">Android One (8GB) (sprout8)</a></li>
+                  <li id="device_tilapia"><a class="waves-effect" href="javascript:void(0)">Nexus 7 (GSM) (tilapia)</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="container" style="margin-top: 20px">
+        <div class="row">
+          <div class="col s12" id="card-googleads-success-1">
+            <div class="card info ad-wrapper">
+              <div class="card-content">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- 下载主页V2-顶部1 -->
+                <ins class="adsbygoogle ad" style="display:block" data-ad-client="ca-pub-1229799408538170" data-ad-slot="2326233491" data-ad-format="auto"></ins>
+                <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="card info">
+              <div class="card-content">
+                <span class="card-title"><b>What is the difference?</b></span>
+                <p>
+                  <b>RELEASE</b>: Tested after integrating new features, more stable than NIGHTLY. (Odexed builds)<br>
+                  <b>NIGHTLY</b>: Built daily with newest code and experimental features, might contain undiscovered bugs. (Deodexded builds)<br>
+                  <b>HISTORY</b>: Final odexded builds once a newer Android version is out and being built.<br>
+                  <b>EXPERIMENTAL</b>: Released when a new device is added or when a new feature is added for public beta testing and feedback. (Deodexded builds)<br>
+                  <b>UNOFFICIAL</b>: Maintained separately by individual developers, usually involves modification of shared code which cannot be merged (affects other devices), therefore maintained by the developer himself.<br>
+                  <b>Note</b>: We always test the shared code for bugs, however sometimes we may not be able to detect device specific bugs. If you have such issues, it will be better to report to the device maintainer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="card blue">
+              <div class="card-content white-text">
+                <span class="card-title"><b>Nightly Build Status</b></span>
+                <p>Last checked on: Sun Jul 2 01:15:01 CST 2017</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title"><b>Server 0x01</b></span>
+                <table class="bordered striped highlight scrollable-table">
+                  <thead>
+                    <tr>
+                      <th>Device</th>
+                      <th>Status</th>
+                      <th>Build Log</th>
+                      <th>Last Build</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Success">check_circle</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Pending">help</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Failed">error</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title"><b>Server 0x02</b></span>
+                <table class="bordered striped highlight scrollable-table">
+                  <thead>
+                    <tr>
+                      <th>Device</th>
+                      <th>Status</th>
+                      <th>Build Log</th>
+                      <th>Last Build</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Success">check_circle</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Pending">help</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">z2</a><br/><small>Zuk Z2</small></td>
+                      <td><i class="material-icons red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Failed">error</i></td>
+                      <td><a href="#">mk_z2.log</a></td>
+                      <td>2017-06-22 20:01:43</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer blue">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <p class="grey-text text-lighten-4">Copyright &#xA9; 2012 - 2017 MoKee Open Source Team</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="/mockup/js/main.js"></script>
+  </body>
+</html>
