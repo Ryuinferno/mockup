@@ -18,6 +18,21 @@ main
   table.highlight > tbody > tr:hover
     background-color: #ddd
 
+  table.status
+    td
+      &.nowrap
+        white-space: nowrap
+
+      .small
+        width: 22px
+        height: 22px
+        vertical-align: bottom
+
+      i
+        vertical-align: middle
+        position: relative
+        top: -2px
+
   .card.info
     ul
       padding-left: 0
@@ -223,7 +238,6 @@ footer.page-footer
     .scrollable-table
       display: block
       overflow-x: auto
-      width: 100%
 
       th
         white-space: nowrap
@@ -249,3 +263,11 @@ footer.page-footer
   nav
     .page-title
       font-size: 16px
+
+  main
+    table.status
+      display: block
+      overflow-x: auto
+
+      td
+        white-space: nowrap
